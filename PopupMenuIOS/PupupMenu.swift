@@ -23,7 +23,7 @@ struct PupupMenu<T: View>: View {
             if isShowing {
                 Rectangle().fill(Color.clear)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(.ultraThinMaterial, in: Rectangle())
+                    .background(.ultraThinMaterial.opacity(0.7), in: Rectangle())
                     .onTapGesture {
                         withAnimation {
                             isShowing = false
