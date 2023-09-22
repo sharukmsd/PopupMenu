@@ -38,8 +38,18 @@ struct PupupMenu<T: View>: View {
                         .frame(height: scrollHeight)
                         .simultaneousGesture(
                             DragGesture().onChanged({ value in
-                                print(value.translation.height)
-                                if value.translation.height > 12 {
+                                dump(value)
+                                let direction = GestureManager.detectDirection(value: value)
+                                switch direction {
+                                case .left:
+                                    break
+                                case .right:
+                                    break
+                                case .up:
+                                    withAnimation(.spring()) {
+                                        scrollHeight = reader.size.height
+                                    }
+                                case .down:
                                     let height = reader.size.height * 0.4
                                     if scrollHeight == height {
                                         isShowing = false
@@ -48,10 +58,8 @@ struct PupupMenu<T: View>: View {
                                             scrollHeight = height
                                         }
                                     }
-                                } else if value.translation.height < 0 {
-                                    withAnimation(.spring()) {
-                                        scrollHeight = reader.size.height
-                                    }
+                                case .none:
+                                    break
                                 }
                             }))
                         

@@ -13,6 +13,7 @@
 		04BAF2F72ABC7748000B1353 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BAF2F62ABC7748000B1353 /* Preview Assets.xcassets */; };
 		04BAF2FE2ABC90A1000B1353 /* PupupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAF2FD2ABC90A1000B1353 /* PupupMenu.swift */; };
 		04E650D42ABD602700F6FA2D /* demo-menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04E650D32ABD602700F6FA2D /* demo-menu.gif */; };
+		04E650D62ABD64ED00F6FA2D /* GestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E650D52ABD64ED00F6FA2D /* GestureManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		04BAF2F62ABC7748000B1353 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04BAF2FD2ABC90A1000B1353 /* PupupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupupMenu.swift; sourceTree = "<group>"; };
 		04E650D32ABD602700F6FA2D /* demo-menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-menu.gif"; sourceTree = "<group>"; };
+		04E650D52ABD64ED00F6FA2D /* GestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				04BAF2EF2ABC7745000B1353 /* PopupMenuIOSApp.swift */,
 				04BAF2F12ABC7745000B1353 /* ContentView.swift */,
 				04BAF2FD2ABC90A1000B1353 /* PupupMenu.swift */,
+				04E650D52ABD64ED00F6FA2D /* GestureManager.swift */,
 				04BAF2F32ABC7748000B1353 /* Assets.xcassets */,
 				04E650D22ABD601600F6FA2D /* Demo */,
 				04BAF2F52ABC7748000B1353 /* Preview Content */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BAF2F22ABC7745000B1353 /* ContentView.swift in Sources */,
+				04E650D62ABD64ED00F6FA2D /* GestureManager.swift in Sources */,
 				04BAF2F02ABC7745000B1353 /* PopupMenuIOSApp.swift in Sources */,
 				04BAF2FE2ABC90A1000B1353 /* PupupMenu.swift in Sources */,
 			);
