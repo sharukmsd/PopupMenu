@@ -14,9 +14,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Button {
-                withAnimation {
-                    isShown = true
-                }
+                isShown = true
             } label: {
                 Image(systemName: "plus")
                     .imageScale(.large)
